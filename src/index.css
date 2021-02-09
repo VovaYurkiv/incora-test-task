@@ -1,13 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(66, 66, 66);
+}
+
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  background-color: rgb(202, 202, 202);
+  margin: 0;
+  padding: 0;
+}
+
+.add-btn:hover {
+  background-color: rgb(67, 115, 160);
+}
+
+.post-btn:hover {
+  background-color: rgb(67, 115, 160);
+}
+
+.close-btn:hover {
+  background-color: rgb(201, 10, 10);
+}
+
+.modal-yes {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-no {
+  display: none;
+}
+
+.btn-edit:hover {
+  background-color: rgb(163, 160, 0);
+}
+
+.btn-delete:hover {
+  background-color: rgb(187, 22, 22);
+}
+
+.modal {
+  position: fixed;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(245, 244, 244);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 30px;
+  width: 50%;
+  height: 40%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
